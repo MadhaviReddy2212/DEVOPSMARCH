@@ -1,0 +1,5 @@
+jenkins.io
+install -  yum install java-21-amazon-corretto -y
+rep from jenkins.io 
+systemctl start jenkins
+systemctl status jenkins
