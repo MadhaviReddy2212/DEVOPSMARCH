@@ -2,27 +2,54 @@ architecture
 monolatic - deploy all services in a single server and single db eg :swigy
 microservices - each services run in each services and have  multiple server and db
 
+Docker 
 docker -open source used to create design deploy and run the app
-docker uses create container like hypervisor in virtualisation 
+docker uses create container
 
-container like hypervisor in virtualisation
+container are lik in virtual machine and docker are replaced by hypervisor
+
 container are light weight
 its doesn't need os
-we use images 
+we use images  to run applicatiocb
 image - all packages dependecny and application is known as contarization process 
 images are stored in docker hub
 1 sever how many container we can run its depends on resource of server
 
+process
+code developer push tp github and devops engineer creates a dockerfile and push to github and but code +dockerfile build and 
+generate the docker image and run application in container
+docker =images+store+share=dockerhub
 docker Architecture
-client
-docker server demon
-docker registery
+client -commands
+host - install docker
+docker registery -store and share images
 
+
+run image container get created
 yum install docker -y
 docker -v
 systemctl status docker
 systemctl start docker
 docker ps -list the container
 docker images -list the images
-docker run -d --name containername -p 2026:80 imaagename
+docker run -d --name containername -p 2026:80 imaagename   =create container
+-d-detach mode runs app in backend when its stopped
+-p -publish
+2026-hostport
+80-containerport is based on image 
 docker stop containername - stop the container
+
+commnds
+docker ps
+docker ps -a - return all container running ans stopped
+docker image
+docker pull imagename 
+docker run imagename
+docker stop containername
+docker rm containername
+docker start comtainername
+docker stop $(docker ps)
+docker rm $(docker ps -a)
+docker rmi imagename
+docker rmi $(docker images)
+
