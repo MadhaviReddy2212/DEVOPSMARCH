@@ -53,3 +53,55 @@ docker rm $(docker ps -a)
 docker rmi imagename
 docker rmi $(docker images)
 
+
+
+dockerfile with web application
+dockerfile with database
+dockerfile with java
+docker with nodejs
+docker registry
+
+
+jenkins with docker integrate
+yum install java-21-amazon-corretto jenkins -y
+yum install docker -y
+
+create a job and take pipeline
+pipeline{
+  agent any{
+        stages('code'){
+              steps{
+                    git ""
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
