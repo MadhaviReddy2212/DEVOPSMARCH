@@ -80,19 +80,17 @@ pipeline{
 
 
 
+distroless images - provide security and multi stage docker file -reduce the size of image
 
+container - disadvatage
+problem 1 - usually conatiner use the filesystem and cpu ,storage from kernel its doesn't have independent so when we perform auditing using the log file 
+when container is down and it will losse the log file its doesn't have pervious log
+problem2 - front and backend which backend is stopped it doesn't provide the response to frontend so it will not provide to user
 
+problem3 - apps wants to read the files from host os cron job- perdiocally job which running on host  which store in file host and display to user
 
-
-
-
-
-
-
-
-
-
-
+solution -Bind mounts(allow to bind the directory in container and host eg: app folder)
+volumes (  better lifecycle using docker cli we create a volume or destroy from container 1 to container2
 
 
 
